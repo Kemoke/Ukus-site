@@ -10,56 +10,95 @@
       <schema id="1" name="ukus_content"/>
       <table id="2" parent="1" name="mainmenu"/>
       <table id="3" parent="1" name="news"/>
-      <column id="4" parent="2" name="ID">
+      <table id="4" parent="1" name="reservation"/>
+      <column id="5" parent="2" name="ID">
         <mandatory>1</mandatory>
         <data-type>tinyint(10)</data-type>
       </column>
-      <column id="5" parent="2" name="text">
+      <column id="6" parent="2" name="text">
         <mandatory>1</mandatory>
         <data-type>varchar(1024)</data-type>
       </column>
-      <column id="6" parent="2" name="link">
+      <column id="7" parent="2" name="link">
         <mandatory>1</mandatory>
         <data-type>varchar(1024)</data-type>
       </column>
-      <key id="7" parent="2" name="PRIMARY">
+      <key id="8" parent="2" name="PRIMARY">
         <columns>ID</columns>
         <primary>1</primary>
       </key>
-      <column id="8" parent="3" name="ID">
+      <column id="9" parent="3" name="ID">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="9" parent="3" name="title">
+      <column id="10" parent="3" name="title">
         <mandatory>1</mandatory>
         <data-type>varchar(256)</data-type>
       </column>
-      <column id="10" parent="3" name="text">
+      <column id="11" parent="3" name="text">
         <mandatory>1</mandatory>
         <data-type>text</data-type>
       </column>
-      <column id="11" parent="3" name="subtitle">
+      <column id="12" parent="3" name="subtitle">
         <mandatory>1</mandatory>
         <data-type>varchar(256)</data-type>
       </column>
-      <column id="12" parent="3" name="subtext">
+      <column id="13" parent="3" name="subtext">
         <mandatory>1</mandatory>
         <data-type>text</data-type>
       </column>
-      <column id="13" parent="3" name="img_path">
+      <column id="14" parent="3" name="img_path">
         <mandatory>1</mandatory>
         <data-type>varchar(1024)</data-type>
       </column>
-      <column id="14" parent="3" name="img_alt">
+      <column id="15" parent="3" name="img_alt">
         <mandatory>1</mandatory>
         <data-type>varchar(256)</data-type>
       </column>
-      <column id="15" parent="3" name="date">
+      <column id="16" parent="3" name="date">
         <mandatory>1</mandatory>
         <data-type>timestamp</data-type>
         <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
       </column>
-      <key id="16" parent="3" name="PRIMARY">
+      <key id="17" parent="3" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="18" parent="4" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="19" parent="4" name="hour">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="20" parent="4" name="minutes">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="21" parent="4" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="22" parent="4" name="surname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="23" parent="4" name="number">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="24" parent="4" name="note">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="25" parent="4" name="date">
+        <data-type>date</data-type>
+      </column>
+      <column id="26" parent="4" name="phone">
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="27" parent="4" name="PRIMARY">
         <columns>ID</columns>
         <primary>1</primary>
       </key>
