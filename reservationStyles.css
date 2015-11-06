@@ -1,0 +1,48 @@
+#customersDate{
+	position: relative;
+	left: 92px;
+	width: 170px;
+} 
+#customersHour{
+	position: relative;
+	left: 85px;
+}
+#customersMinute{
+	position: relative;
+	left: 85px;
+}
+#customersName{
+	position: relative;
+	left: 91px;
+	width: 170px;
+}
+#customersSurname{
+	position: relative;
+	left: 63px;
+	width: 170px;
+}
+#customersNumber{
+	position: relative;
+	left: 103px;
+	width: 170px;
+}
+#customrsPhone{
+	position: relative;
+	left: 24px;
+	width: 170px;
+}
+#customersNote{
+	position: relative;
+	left: ;
+	width: 381px;
+	min-height: 100px;
+	height: auto;
+}
+#t{
+	position: relative;
+	left: ;
+}
+#completeRes{
+	position: relative;
+	left: ;
+}

@@ -1,0 +1,76 @@
+<head>
+	<title>Restoran 'UKUS' - Rezervacije</title>
+	<script src="jQuery.js"></script>
+	<link rel="stylesheet" type="text/css" href="defaultStyles.css">
+	<link rel="stylesheet" type="text/css" href="reservationStyles.css">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body>
+	<div id="page">
+		<div id="mainMenu">
+			<div id="nav">
+				<button class="mainBtn">POČETNA</button>
+				<button class="mainBtn">O RESTORANU</button>
+				<button class="mainBtn">REZERVACIJE</button>
+				<button class="mainBtn">MENI</button>
+				<button class="mainBtn">DEŠAVANJA</button>
+				<button class="mainBtn">GALERIJA</button>
+				<button class="mainBtn">P.C. 'UKUS'</button>
+				<button class="mainBtn">KONTAKT</button>
+			</div>
+		</div>
+									
+		<div id="header">
+			
+			<img src="./img/header.png" id="combinedPicture" class="headerImage">
+			<div id="mask"><img src="./img/logo3.png" width="150px"></div>
+		</div>
+
+		<div id="mainContent" >
+			<h2 class="subHeader" style="margin-left: 20px;">RESERVATIONS</h3>
+			<div id="reservationForm" style="margin-left: 175px;">
+						<p>Odaberite datum: 
+						<input type="date" id="customersDate" value="2015-02-09"/></p>
+						
+						<p>Odaberite vrijeme: <select id="customersHour"></select>
+						<select id="customersMinute"></select></p>
+						
+						<p>Unesite Vaše ime: <input id="customersName" placeholder="Vaše ime"/></p>
+						
+						<p>Unesite Vaše prezime: <input id="customersSurname" placeholder="Vaše prezime"/></p>
+						
+						<p>Za koliko osoba: <input id="customersNumber" placeholder="Broj osoba" type="number" min="1" max="30" /></p>
+						
+						<p>Unesite broj Vašeg telefona: <input id="customrsPhone" placeholder="Vaš kontakt telefon"/></p>
+						
+						<textarea id="customersNote" placeholder="Dodatni zahtjevi..."></textarea>
+						<br><br>
+						<input type="button" id="t" onclick="myFunction()" value="Proslijedi"/>
+
+						<p><strong>Note:</strong> PREPORUČUJEMO KORIŠTENJE GOOGLE<br>CHROME BROWSERA ZA POUZDANO FUNKCIONISANJE FORMULARA.</p>
+
+						<p id="completeRes"> aa </p>
+
+						<script>
+						function myFunction() {
+						    var date = document.getElementById("customersDate").value;
+						    $("#completeRes").append("Vaša rezervacija je zakazana za:" +date);
+						}
+						</script>
+			</div>
+		
+
+		<footer id="footer">
+			<p>
+					<b>footer footer footer footer footer footer<br>footer footer footer footer footer footer<br>footer footer footer footer footer footer<br>Bakir Brkic, Oktobar, 2015.<br></b>
+			</p>
+		</footer>
+		
+		</div>
+		<script src="main.js"></script>
+		<script type="text/javascript">
+			$("#header").css("height", "270px");
+			$(".headerImage").css("height", "255px");
+		</script>
+	</div>
+</body>
