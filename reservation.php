@@ -57,7 +57,7 @@ $menu = $conn->query('SELECT ID, text, link FROM mainmenu');
             $phone = test_input($_POST["phone"]);
             $note = test_input($_POST["note"]);
             $sql = "INSERT INTO reservation (ID, phone, hour, minutes, name, surname, number, phone, note)
-                    VALUES ('', '$date', '$hour', '$minutes', '$name', '$surname', '$number', '$phone', '$note')";
+                    VALUES (NULL, '$date', '$hour', '$minutes', '$name', '$surname', '$number', '$phone', '$note')";
             $conn->query($sql);
         }
         function test_input($data) {
